@@ -1,15 +1,9 @@
 #include "AppDelegate.h"
 #include "SimpleAudioEngine.h"
-#include "HelloWorldScene.h"
+#include "GameLayer.h"
 
 USING_NS_CC;
-
 using namespace CocosDenshion;
-
-static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
-static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
-static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
-static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
 AppDelegate::AppDelegate()
 {
@@ -41,7 +35,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::create("Victorian Game");
+        glview = GLViewImpl::create("My Game");
         director->setOpenGLView(glview);
     }
     
@@ -87,7 +81,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    auto scene = GameLayer::scene();
     
     // run
     director->runWithScene(scene);
