@@ -75,6 +75,8 @@
 		D14A4A051DF9FF1100CF76AA /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = D14A49F81DF9FF1100CF76AA /* jump.wav */; };
 		D14A4A061DF9FF1100CF76AA /* openUmbrella.wav in Resources */ = {isa = PBXBuildFile; fileRef = D14A49F91DF9FF1100CF76AA /* openUmbrella.wav */; };
 		D14A4A081DF9FF1100CF76AA /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = D14A49FB1DF9FF1100CF76AA /* start.wav */; };
+		D14A4A0B1DFAE38F00CF76AA /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A4A091DFAE38F00CF76AA /* Block.cpp */; };
+		D14A4A0E1DFAE57200CF76AA /* GameSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A4A0C1DFAE57200CF76AA /* GameSprite.cpp */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -190,6 +192,10 @@
 		D14A49F81DF9FF1100CF76AA /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 		D14A49F91DF9FF1100CF76AA /* openUmbrella.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openUmbrella.wav; sourceTree = "<group>"; };
 		D14A49FB1DF9FF1100CF76AA /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
+		D14A4A091DFAE38F00CF76AA /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		D14A4A0A1DFAE38F00CF76AA /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		D14A4A0C1DFAE57200CF76AA /* GameSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSprite.cpp; sourceTree = "<group>"; };
+		D14A4A0D1DFAE57200CF76AA /* GameSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSprite.h; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -350,6 +356,10 @@
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				D14A49E91DF9FE1F00CF76AA /* GameLayer.cpp */,
 				D14A49EA1DF9FE1F00CF76AA /* GameLayer.h */,
+				D14A4A091DFAE38F00CF76AA /* Block.cpp */,
+				D14A4A0A1DFAE38F00CF76AA /* Block.h */,
+				D14A4A0C1DFAE57200CF76AA /* GameSprite.cpp */,
+				D14A4A0D1DFAE57200CF76AA /* GameSprite.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -560,7 +570,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14A4A0E1DFAE57200CF76AA /* GameSprite.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				D14A4A0B1DFAE38F00CF76AA /* Block.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
