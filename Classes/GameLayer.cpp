@@ -87,7 +87,9 @@ void GameLayer::update(float dt) {
     
     if (!_running) return;
     
-    
+    if(_player->getVector().x > 0) {
+        _background->setPositionX(_background->getPosition().x - _player->getVector().x * -.25f);
+    }
     
 }
 

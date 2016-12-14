@@ -12,7 +12,7 @@
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
 //#include "Terrain.h"
-//#include "Player.h"
+#include "Player.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -24,11 +24,10 @@ typedef enum {
 } GameState;
 
 
-class GameLayer : public Layer
-{
+class GameLayer : public Layer {
     
 //    Terrain * _terrain;
-//    Player * _player;
+    Player * _player;
     Label * _scoreDisplay;
     
     Sprite * _intro;
