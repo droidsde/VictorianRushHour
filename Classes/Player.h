@@ -32,7 +32,7 @@ typedef enum
 
 
 class Player : public GameSprite {
-
+    
     Action * _rideAnimation;
     Action * _floatAnimation;
     float _speed;
@@ -109,3 +109,5 @@ public:
 };
 
 #endif // __PLAYER_H__
+
+

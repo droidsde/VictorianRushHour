@@ -78,6 +78,7 @@
 		D14A4A0B1DFAE38F00CF76AA /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A4A091DFAE38F00CF76AA /* Block.cpp */; };
 		D14A4A0E1DFAE57200CF76AA /* GameSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A4A0C1DFAE57200CF76AA /* GameSprite.cpp */; };
 		D14A4A111E01C7B800CF76AA /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A4A0F1E01C7B800CF76AA /* Player.cpp */; };
+		D14A4A141E030B8E00CF76AA /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14A4A121E030B8E00CF76AA /* Terrain.cpp */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -199,6 +200,8 @@
 		D14A4A0D1DFAE57200CF76AA /* GameSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSprite.h; sourceTree = "<group>"; };
 		D14A4A0F1E01C7B800CF76AA /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		D14A4A101E01C7B800CF76AA /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D14A4A121E030B8E00CF76AA /* Terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Terrain.cpp; sourceTree = "<group>"; };
+		D14A4A131E030B8E00CF76AA /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -365,6 +368,8 @@
 				D14A4A0D1DFAE57200CF76AA /* GameSprite.h */,
 				D14A4A0F1E01C7B800CF76AA /* Player.cpp */,
 				D14A4A101E01C7B800CF76AA /* Player.h */,
+				D14A4A121E030B8E00CF76AA /* Terrain.cpp */,
+				D14A4A131E030B8E00CF76AA /* Terrain.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -463,6 +468,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = L2EL9TL29G;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Victorian" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -576,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14A4A0E1DFAE57200CF76AA /* GameSprite.cpp in Sources */,
+				D14A4A141E030B8E00CF76AA /* Terrain.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				D14A4A111E01C7B800CF76AA /* Player.cpp in Sources */,
 				D14A4A0B1DFAE38F00CF76AA /* Block.cpp in Sources */,
@@ -619,6 +630,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = L2EL9TL29G;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -638,6 +650,7 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cea.XmobPOS;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,6 +665,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = L2EL9TL29G;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -669,6 +683,7 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cea.XmobPOS;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
